@@ -46,7 +46,6 @@ func (s *Storage) InsertGroupReport(g * reporter.GroupReport) error {
 	// save in database
 	err = s.storage.DB.Set(ctx, key, []byte(b), 0).Err()
 	if err != nil {
-		fmt.Println(9999)
 		return err
 	}
 
@@ -87,8 +86,6 @@ func (s *Storage) ListGroupReports(t reporter.ServiceType) ([]*reporter.GroupRep
 	// // iterte over db elements and push in slice
 	iter := s.storage.DB.Scan(ctx, 0, fmt.Sprintf("%s:%s:*", prefix, t), 0).Iterator()
 	for iter.Next(ctx) {
-		fmt.Println("JAJAJAA keys", iter.Val())
-
 		// split key using prefix
 		split := strings.Split(iter.Val(), ":")
 
@@ -103,13 +100,6 @@ func (s *Storage) ListGroupReports(t reporter.ServiceType) ([]*reporter.GroupRep
 		if err != nil {
 			return nil, err
 		}
-
-		// // parse bytes to group report struct
-		// var groupReport *reporter.GroupReport
-		// err = json.Unmarshal(gp, &groupReport)
-		// if err != nil {
-		// 	return nil, err
-		// }
 
 		// append new element to group reports slice
 		groupReports = append(groupReports, groupReport)
