@@ -2,17 +2,17 @@ package storage
 
 import "github.com/go-redis/redis/v9"
 
-type S struct {
+type Storage struct {
 	DB *redis.Client
 }
 
-func New(URL string) (*S, error) {
+func New(URL string) (*Storage, error) {
 	db := redis.NewClient(&redis.Options{
 		Addr:	  URL,
 		DB:		  0,  // use default DB
 	})
 
-	return &S{
+	return &Storage{
 		DB: db,
 	}, nil
 }

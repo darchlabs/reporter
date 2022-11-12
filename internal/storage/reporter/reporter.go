@@ -16,10 +16,10 @@ import (
 const prefix = "group-reports"
 
 type Storage struct {
-	storage *storage.S
+	storage *storage.Storage
 }
 
-func New(s *storage.S) *Storage {
+func New(s *storage.Storage) *Storage {
 	return &Storage {
 		storage: s,
 	}
