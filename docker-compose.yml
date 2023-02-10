@@ -1,0 +1,20 @@
+version: "3.9"
+
+volumes:
+  data-redis:
+    driver: local
+
+services:
+  synchronizers:
+    image: darchlabs/synchronizer-v2:1.2.0
+    ports:
+      - 5555:5555
+    env_file:
+      - .env.synchronizers
+
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379
+    volumes:
+      - data-redis:/data-redis
