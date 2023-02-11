@@ -12,6 +12,13 @@ services:
     env_file:
       - .env.synchronizers
 
+  jobs:
+    image: darchlabs/jobs:1.1.2
+    ports:
+      - 3030:3030
+    env_file:
+      - .env.jobs
+
   redis:
     image: redis:latest
     ports:
