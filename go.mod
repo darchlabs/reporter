@@ -3,8 +3,8 @@ module github.com/darchlabs/reporter
 go 1.17
 
 require (
+	github.com/darchlabs/jobs v1.1.3
 	github.com/darchlabs/synchronizer-v2 v1.1.0
-	github.com/darchlabs/jobs v1.1.2
 	github.com/go-redis/redis/v9 v9.0.0-rc.1
 	github.com/kelseyhightower/envconfig v1.4.0
 )

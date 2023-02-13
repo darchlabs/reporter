@@ -78,6 +78,8 @@ github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ3
 github.com/cyberdelia/templates v0.0.0-20141128023046-ca7fffd4298c/go.mod h1:GyV+0YP4qX0UQ7r2MoYZ+AvYDp12OF5yg4q8rGnyNh4=
 github.com/darchlabs/jobs v1.1.2 h1:8zNB60dLFWXg6jZIO1EN6/5KHdqMfgqRF4htciTePD0=
 github.com/darchlabs/jobs v1.1.2/go.mod h1:60WO/5cEqzooOn1qlANfRsgfRdCL5uGjfFFyQCLU5+4=
+github.com/darchlabs/jobs v1.1.3 h1:Fm76AhUKStPsLVYrSGRlE9lCv0X3jrqXBehv1BfZd9s=
+github.com/darchlabs/jobs v1.1.3/go.mod h1:60WO/5cEqzooOn1qlANfRsgfRdCL5uGjfFFyQCLU5+4=
 github.com/darchlabs/synchronizer-v2 v1.1.0 h1:jBqW0SHx6tEv7EaQalfvcI1Kx46k/GXdpkGID8r3zm4=
 github.com/darchlabs/synchronizer-v2 v1.1.0/go.mod h1:oaIv0Q7XwK3Z4eIWIKA36H9z2cHwx42lY8XYgY7WaBk=
 github.com/dave/jennifer v1.2.0/go.mod h1:fIb+770HOpJ2fmN9EPPKOqm1vMGhB+TwXKMZhrIygKg=
