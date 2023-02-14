@@ -1,3 +1,2 @@
-.env
-.env.synchronizers
+.env*
 bin
