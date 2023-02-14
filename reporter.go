@@ -18,6 +18,6 @@ type Report struct {
 
 type GroupReport struct {
 	Type      ServiceType `json:"type"`
-	Reports   []*Report   `json:"services"`
+	Reports   []*Report   `json:"reports"`
 	CreatedAt time.Time   `json:"createdAt"`
 }
