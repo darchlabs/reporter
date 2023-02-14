@@ -20,7 +20,7 @@ func Reporter(t reporter.ServiceType, url string, s Storage) error {
 	}
 
 	if t == reporter.ServiceTypeNodes {
-		return nodes()
+		return nodes(url, s)
 	}
 
 	return fmt.Errorf("invalid service_type=%s in Reporter(t)", string(t))
