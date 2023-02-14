@@ -48,7 +48,7 @@ func nodes(url string, s Storage) error {
 
 	// prepare group report
 	groupReport := &reporter.GroupReport{
-		Type:      reporter.ServiceTypeJobs,
+		Type:      reporter.ServiceTypeNodes,
 		Reports:   reports,
 		CreatedAt: now,
 	}
